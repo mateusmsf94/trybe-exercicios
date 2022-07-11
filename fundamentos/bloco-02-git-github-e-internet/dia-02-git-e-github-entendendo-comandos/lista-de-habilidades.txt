@@ -1,1 +1,8 @@
-outro maluco editando o mesmo arquivo na brach dele
+O que eu vou aprender na Trybe:
+
+- Unix
+- Bash
+- Git
+- HTML
+- CSS
+
