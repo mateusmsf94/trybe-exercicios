@@ -7,4 +7,4 @@
 1. - [x] Modifique o tamanho do h1 para 65 pixels
 2. - [x] Modifique a cor do texto do h1 para laranja
 3. - [x] Modifique a cor de fundo da lista não ordenada
-4. - [ ] Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo
+4. - [x] Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo
