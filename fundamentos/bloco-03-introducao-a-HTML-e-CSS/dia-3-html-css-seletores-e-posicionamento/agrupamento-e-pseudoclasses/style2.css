@@ -1,0 +1,48 @@
+div:hover {
+  border: 5px solid darkcyan;
+}
+
+.vermelho {
+  background: red;
+}
+
+.vermelho h3 {
+  color: aqua;
+}
+
+.roxo {
+  background-color: purple;
+}
+
+.roxo h3 {
+  color: beige;
+}
+
+.verde {
+  background-color: green;
+  height: 100px;
+}
+
+.verde h3 {
+  color: brown;
+}
+
+.cinza {
+  background-color: gray;
+}
+
+.cinza h3 {
+  color: lightcoral;
+}
+
+.bege {
+  background-color: bisque;
+}
+
+.bege h3 {
+  color: darkred;
+}
+
+div:nth-child(odd) h3 {
+  font-style: italic;
+}
