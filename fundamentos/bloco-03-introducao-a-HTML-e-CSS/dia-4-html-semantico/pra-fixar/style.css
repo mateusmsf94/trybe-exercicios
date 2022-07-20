@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+}
+
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  
+}
+
+.second {
+  display: inline-block;
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+.third {
+  display: inline-block;
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+}
+
+<<<<<<< HEAD
+section > li {
+=======
+section li {
+>>>>>>> 3034938e8604076943e2d79a3b13591c22d2aad3
+  display: inline;
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: quick-kiss;
+    src: url(QuickKissPersonalUse-PxlZ.ttf);
+}
+
+header h1 {
+    font-family: quick-kiss, sans-serif;
+}
+
+body {
+    background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); 
+    background-repeat: no-repeat; 
+    height: 100vh;
+       
+}
+
+
+
+
+table,
+td,
+th {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+}
