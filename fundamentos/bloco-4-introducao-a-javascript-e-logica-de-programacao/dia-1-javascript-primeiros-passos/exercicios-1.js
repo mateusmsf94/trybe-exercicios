@@ -34,8 +34,13 @@ modulo(21, 4);
 
 function maior(a, b) {
   const maior = a > b ? a : b;
-  console.log(maior);
+  return maior;
 }
 
-maior(4, 5);
+console.log(maior(4, 5));
 
+function maior3 (a, b, c) {
+  return maior(maior(a, b), c)
+}
+
+console.log(maior3(3, 54, 32))
