@@ -1,46 +1,59 @@
-// Exercicio 1
+const exercicios = {
+  adicao: (n1, n2) => n1 + n2,
+  
+  subtracao: (a, b) => a - b,
 
-function adicao(a, b) {
-  console.log(a + b);
+  multiplicacao: (a, b) => a * b,
+
+  divisao: (a, b) => a / b,
+
 }
 
-adicao(21, 4);
 
-function subtracao(a, b) {
-  console.log(a - b);
-}
 
-subtracao(21, 4);
 
-function multiplicacao(a, b) {
-  console.log(a * b);
-}
+module.exports = exercicios;
+  
+  
+// // Exercicio 1
+  
 
-multiplicacao(21, 4);
 
-function divisao(a, b) {
-  console.log(a / b);
-}
+// adicao(21, 4);
 
-divisao(21, 4);
 
-function modulo(a, b) {
-  console.log(a % b);
-}
+// subtracao(21, 4);
 
-modulo(21, 4);
+// function multiplicacao(a, b) {
+  //   console.log(a * b);
+  // }
 
-// Exercicio 2
+// multiplicacao(21, 4);
 
-function maior(a, b) {
-  const maior = a > b ? a : b;
-  return maior;
-}
+// function divisao(a, b) {
+//   console.log(a / b);
+// }
 
-console.log(maior(4, 5));
+// divisao(21, 4);
 
-function maior3 (a, b, c) {
-  return maior(maior(a, b), c)
-}
+// function modulo(a, b) {
+//   console.log(a % b);
+// }
 
-console.log(maior3(3, 54, 32))
+// modulo(21, 4);
+
+// // Exercicio 2
+
+// function maior(a, b) {
+  //   const maior = a > b ? a : b;
+  //   return maior;
+  // }
+  
+  // console.log(maior(4, 5));
+  
+  // function maior3 (a, b, c) {
+    //   return maior(maior(a, b), c)
+    // }
+    
+    // console.log(maior3(3, 54, 32))
+    
