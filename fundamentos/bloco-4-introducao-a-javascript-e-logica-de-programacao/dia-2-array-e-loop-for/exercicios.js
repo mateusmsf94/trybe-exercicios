@@ -11,9 +11,24 @@ const exercicios = {
     } else {
       return "valor menor ou igual 20"
     }
-  }
+  },
 
-  
+  maiorDoArr: (arr) => arr.reduce((max, curr) => {
+    if (max < curr) {
+      max = curr
+    }
+    return max
+  }, -Infinity),
+
+  maiorFor (arr) {
+    let max = -Infinity
+    for (i of arr) {
+      if (i > max) {
+        max = i
+      }
+    }
+    return max
+  }
   
 
 }

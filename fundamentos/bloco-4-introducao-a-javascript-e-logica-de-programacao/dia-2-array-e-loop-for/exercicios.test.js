@@ -16,3 +16,10 @@ test('media maior que 20', () => {
   expect(exercicios.maiorQue20(numbers)).toBe("valor maior que 20")
 })
 
+test('maior num no array igual a 100', () => {
+  expect(exercicios.maiorDoArr(numbers)).toBe(100)
+})
+
+test('maior num no array igual a 100', () => {
+  expect(exercicios.maiorFor(numbers)).toBe(100)
+})
