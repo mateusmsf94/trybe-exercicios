@@ -11,3 +11,8 @@ test('soma de todos os numeros do array deve ser igual a 278', () => {
 test('media do array deve ser igua a ', () => {
   expect((exercicios.mediaDoArr(numbers)).toFixed(2)).toEqual("30.28")
 })
+
+test('media maior que 20', () => {
+  expect(exercicios.maiorQue20(numbers)).toBe("valor maior que 20")
+})
+

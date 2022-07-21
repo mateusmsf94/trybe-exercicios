@@ -3,9 +3,19 @@ const exercicios = {
 
   somaTudo: (arr) => arr.reduce((acc, curr) => acc + curr, 0),
 
-  mediaDoArr: (arr) => arr.reduce((acc, curr) => (acc + curr) / 2, 0)
+  mediaDoArr: (arr) => arr.reduce((acc, curr) => (acc + curr) / 2, 0),
+
+  maiorQue20 (arr) {
+    if( this.mediaDoArr(arr) > 20) {
+      return "valor maior que 20"
+    } else {
+      return "valor menor ou igual 20"
+    }
+  }
+
   
   
+
 }
 
 module.exports = exercicios;
