@@ -7,6 +7,28 @@ const exercicios = {
 
   divisao: (a, b) => a / b,
 
+  maior(a, b) {
+    const maior = a > b? a : b
+    return maior
+  },
+
+  maior3: function(a, b, c) {
+    return this.maior(this.maior(a, b), c)
+  },
+  
+  posOuneg: (a) => a > 0? "positive" : "negative",
+
+  triangulo: (a1, a2, a3) => {
+    if(a1 < 0 || a2 < 0 || a3 < 0) {
+      return("os angulos tem que ser positivo")
+    } else if (a1 + a2 + a3 !== 180) {
+      return("triangulo invalido")
+    } else {
+      return("triangulo valido")
+    }    
+  }
+  
+
 }
 
 
