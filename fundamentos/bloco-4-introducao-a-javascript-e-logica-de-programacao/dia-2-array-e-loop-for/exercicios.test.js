@@ -20,6 +20,18 @@ test('maior num no array igual a 100', () => {
   expect(exercicios.maiorDoArr(numbers)).toBe(100)
 })
 
-test('maior num no array igual a 100', () => {
+test('maiorFor num no array igual a 100', () => {
   expect(exercicios.maiorFor(numbers)).toBe(100)
+})
+
+test('imapares do array', () => {
+  expect(exercicios.impares(numbers)).toBe(6)
+})
+
+test('menor num no array igual a 2', () => {
+  expect(exercicios.menorDoArr(numbers)).toBe(2)
+})
+
+test('menor num no array igual a 2', () => {
+  expect(exercicios.menorFor(numbers)).toBe(2)
 })
