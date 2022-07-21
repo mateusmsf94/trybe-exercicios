@@ -26,6 +26,16 @@ const exercicios = {
     } else {
       return("triangulo valido")
     }    
+  },
+
+  xadrez: (nomeDaPeca) => {
+    switch (nomeDaPeca.toLowerCase()) {
+      case "peao":
+        return "move pra frente e come na diagonal"
+    
+      default:
+        return "insira uma peca valida"
+    }
   }
   
 

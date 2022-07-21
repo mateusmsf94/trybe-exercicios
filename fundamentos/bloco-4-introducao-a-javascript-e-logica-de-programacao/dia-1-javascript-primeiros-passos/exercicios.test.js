@@ -39,3 +39,12 @@ test('soma dos angulos nao da 180', () => {
 test('triangulo valido', () => {
   expect(exercicios.triangulo(30, 50, 100)).toBe('triangulo valido')
 })
+
+test('xadrez peca valida', () => {
+  expect(exercicios.xadrez("Peao")).toBe("move pra frente e come na diagonal")
+})
+
+test('xadrez peca invalida', () => {
+  expect(exercicios.xadrez("pato")).toBe('insira uma peca valida')
+})
+
