@@ -17,3 +17,8 @@ console.log(info)
 for (key in info) {
   console.log(key);
 }
+
+//Exercicios 4
+for (key in info) {
+  console.log(info[key]);
+}
