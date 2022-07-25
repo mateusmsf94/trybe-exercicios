@@ -12,3 +12,8 @@ console.log('Bem-vinda,', info.personagem)
 info.recorrente = 'Sim';
 
 console.log(info)
+
+// Exercicio 3
+for (key in info) {
+  console.log(key);
+}
