@@ -8,3 +8,12 @@ function ehPalidromo (palavra) {
 }
 
 console.log(ehPalidromo('arara'));
+
+function indexDoMaior(arr) {
+  let max = arr.reduce(function(a, b) {
+    return Math.max(a, b);
+  }, -Infinity);
+  return arr.indexOf(max)
+}
+
+console.log(indexDoMaior([2, 3, 6, 7, 10, 1]))
