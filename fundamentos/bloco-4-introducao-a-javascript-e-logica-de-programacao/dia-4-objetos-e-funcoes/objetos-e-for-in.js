@@ -18,7 +18,24 @@ for (key in info) {
   console.log(key);
 }
 
-//Exercicios 4
+//Exercicio 4
 for (key in info) {
   console.log(info[key]);
+}
+
+//Exercicio 5
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim'
+}
+
+for (let properties in info) {
+  if ( info[properties] === 'Sim' && info2[properties] === 'Sim'
+  ) {
+    console.log('Ambos recorrentes');
+  } else {
+    console.log(info[properties] + ' e ' + info2[properties]);
+  }
 }
