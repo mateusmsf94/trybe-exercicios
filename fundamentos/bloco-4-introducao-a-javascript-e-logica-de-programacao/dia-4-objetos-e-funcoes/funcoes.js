@@ -17,3 +17,10 @@ function indexDoMaior(arr) {
 }
 
 console.log(indexDoMaior([2, 3, 6, 7, 10, 1]))
+
+function indexDoMenor(arr) {
+  let min = arr.reduce((a, b) => Math.min(a, b), Infinity)
+  return arr.indexOf(min)
+}
+
+console.log(indexDoMenor([2, 4, 6, 7, 10, 0, -3]))
