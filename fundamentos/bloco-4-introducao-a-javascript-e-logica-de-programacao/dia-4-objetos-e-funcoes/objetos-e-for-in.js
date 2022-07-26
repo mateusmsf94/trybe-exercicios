@@ -64,3 +64,6 @@ leitor.livrosFavoritos.push({
 })
 
 console.log(leitor.livrosFavoritos)
+
+//Exercicio 8
+console.log(`Julia tem ${leitor.livrosFavoritos.length} livros favoritos`)
