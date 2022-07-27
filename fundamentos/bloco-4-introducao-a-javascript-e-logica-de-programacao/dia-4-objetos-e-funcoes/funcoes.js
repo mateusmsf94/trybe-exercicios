@@ -24,3 +24,15 @@ function indexDoMenor(arr) {
 }
 
 console.log(indexDoMenor([2, 4, 6, 7, 10, 0, -3]))
+
+function maiorPalavraDoArray (arr) {
+  let maiorP = ''
+  for (i of arr) {
+    if(i.length > maiorP.length) {
+      maiorP = i
+    }
+  }
+  return maiorP
+}
+
+console.log(maiorPalavraDoArray(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
