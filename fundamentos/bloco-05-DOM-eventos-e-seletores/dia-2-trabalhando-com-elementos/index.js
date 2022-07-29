@@ -27,19 +27,15 @@ img.src = "https://picsum.photos/200"
 img.className = "small-image"
 contLeft.appendChild(img)
 
+const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez']
 let list = document.createElement("ul")
-list.innerHTML = `
-  <li>um</li>
-  <li>dois</li>
-  <li>tres</li>
-  <li>quatro</li>
-  <li>cinco</li>
-  <li>seis</li>
-  <li>sete</li>
-  <li>oito</li>
-  <li>nove</li>
-  <li>dez</li>
-`
+for (i of arrayNumbers) {
+  const li = document.createElement('li')
+  li.innerText = i
+  list.appendChild(li)
+}
+
 contRight.appendChild(list)
 
 for (let i = 0; i < 3; i++) {
@@ -47,3 +43,20 @@ for (let i = 0; i < 3; i++) {
   elH3.innerHTML = "show " + i
   principal.appendChild(elH3)
 }
+
+h1.className = 'title'
+
+const elementosH3 = document.getElementsByTagName('h3')
+for(let i = 0; i < 3; i += 1) {
+  elementosH3[i].className = 'description'
+}
+
+principal.removeChild(contLeft)
+
+contRight.style.marginRight = 'auto'
+
+contCentro.parentNode.style.backgroundColor = 'green'
+
+list.lastChild.remove()
+list.lastChild.remove()
+
