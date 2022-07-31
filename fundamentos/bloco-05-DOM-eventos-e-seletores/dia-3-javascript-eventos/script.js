@@ -18,37 +18,59 @@ let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1
 function createDaysOfTheMonth() {
   let getDaysList = document.querySelector('#days');
 
-  for (let day in decemberDaysList) {
+  for (let index = 0; index < decemberDaysList.length; index += 1) {
     
-    //let day = decemberDaysList[index];
+    let day = decemberDaysList[index];
     let dayItem = document.createElement('li');
     dayItem.innerHTML = day;
-    getDaysList.appendChild(dayItem)
     
     if (day === 24 || day === 31) {
       // Caso o dia for 24 ou 31
       dayItem.className = 'day holiday'; // Atribua a classe 'day holiday' ao li criado
+      getDaysList.appendChild(dayItem); // Anexe o li criado como elemento filho do ul
     } else if (day === 4 || day === 11 || day === 18) {
       // Caso o dia for 4, 11 ou 18
       dayItem.className = 'day friday'; // Atribua a classe 'day friday' ao li criado
+      getDaysList.appendChild(dayItem);
     } else if (day === 25) {
       // Caso o dia for 25
       dayItem.className = 'day holiday friday'; // Atribua a classe 'day holiday friday' ao li criado
+      getDaysList.appendChild(dayItem);
     } else {
       // Caso seja qualquer outro dia adicione a classe day ao li criado
       dayItem.className = 'day';
+      getDaysList.appendChild(dayItem);
     }
   }
 }
 
 createDaysOfTheMonth();
 
-function feriadoBtn(srt) {
+function criaBtn(str, id) {
   const btnFeriado = document.createElement('button');
-  btnFeriado.innerHTML = 'Feriados';
-  btnFeriado.id = 'btn-holiday;'
-  document.querySelector('.buttons-container').appendChild(btnFeriado);
+  btnFeriado.innerHTML = str;
+  btnFeriado.id = id;
+  document.querySelector('.buttons-container').appendChild(btnFeriado);  
 }
 
-feriadoBtn();
+
+criaBtn('Feriados','btn-holiday');
+
+function clickTrocaCor (btn, grupo, modificador) {
+  const btnFeriado = document.getElementById(btn)
+  const elementos = document.querySelectorAll(grupo)
+  btnFeriado.addEventListener('click', () => {
+    for (let i in elementos) {
+      elementos[i].classList.toggle(modificador)
+    }
+  })
+}
+
+clickTrocaCor('btn-holiday', '.holiday', 'visible-holiday')
+
+criaBtn('Sexta-feira', 'btn-friday')
+
+clickTrocaCor('btn-friday', '.friday', 'visible-friday')
+
+
 

@@ -37,6 +37,14 @@ button {
   width: 13.6%;
 }
 
+.visible-holiday {
+  background-color: blue;
+}
+
+.visible-friday {
+  background-color: green;
+}
+
 .input-container {
   width: 49%;
   height: 100px;
