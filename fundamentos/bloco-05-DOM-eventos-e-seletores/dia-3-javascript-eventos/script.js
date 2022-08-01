@@ -72,5 +72,31 @@ criaBtn('Sexta-feira', 'btn-friday')
 
 clickTrocaCor('btn-friday', '.friday', 'visible-friday')
 
+function dayMouseOver() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600'; 
+  });
+}
 
+function dayMouseOut() {
+  let days = document.querySelector('#days');
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200'; 
+  });
+}
 
+dayMouseOver();
+dayMouseOut();
+
+function newTaskSpan(task) {
+  let tasksContainer = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  tasksContainer.appendChild(taskName);
+}
+
+newTaskSpan('projeto');
