@@ -100,3 +100,28 @@ function newTaskSpan(task) {
 }
 
 newTaskSpan('projeto');
+
+function legendaCor (cor) {
+  const newEl = document.createElement('div');
+  newEl.className = 'task'
+  newEl.style.backgroundColor = cor
+  let tasksContainer = document.querySelector('.my-tasks');
+  tasksContainer.appendChild(newEl)
+
+}
+
+legendaCor('red')
+
+function setTaskClass() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let myTasks = document.querySelector('.task');
+  myTasks.addEventListener('click', function(event) {
+    if (selectedTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+setTaskClass();
