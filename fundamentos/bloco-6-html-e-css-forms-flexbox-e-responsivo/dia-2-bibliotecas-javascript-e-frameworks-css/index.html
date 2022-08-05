@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/trybe" method="get">
+    <ul>
+      <li>
+        <label for="name" class="label">Name:</label>
+        <input type="text" name="user_name" id="name" class="input">
+      </li>
+      <li>
+        <label for="email" class="label">Email:</label>
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </li>
+      <li>
+        <input type="radio" name="option" id="option1" value="P">
+        <label for="option1">Pequeno</label>
+        <input type="radio" name="option" id="option2" value="M">
+        <label for="option2">Medio</label>
+        <input type="radio" name="option" id="option3" value="G">
+        <label for="option3">Grande</label>        
+      </li>
+      <li>
+        <label for="resposta">Espaco para digitar a resposta</label>
+        <textarea name="resposta" id="resposta" class="textarea is-primary"></textarea>
+      </li>
+      <li>
+        <label for="date" class="label">Data</label>
+        <input type="date" name="data" id="date">
+      </li>
+      <li>
+        <label for="concordo1" class="container">condicao 1
+          <input type="checkbox" name="concordodancia" id="concordo1">
+          <span class="checkmark"></span>
+        </label>
+        <label for="concordo2" class="container">condicao 2
+          <input type="checkbox" name="concordodancia" id="concordo1">
+          <span class="checkmark"></span>
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="button is-rounded is-primary">Enviar</button>
+    <button type="reset" class="button is-rounded is-danger">Apagar</button>
+  </form>
+</body>
+<script src="https://kit.fontawesome.com/e36872aa4b.js" crossorigin="anonymous"></script>
+</html>
