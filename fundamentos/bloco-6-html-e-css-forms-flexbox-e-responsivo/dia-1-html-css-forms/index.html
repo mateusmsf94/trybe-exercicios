@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/trybe" method="get">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" name="user_name" id="name">
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </li>
+      <li>
+        <input type="radio" name="option" id="option1" value="P">
+        <label for="option1">Pequeno</label>
+        <input type="radio" name="option" id="option2" value="M">
+        <label for="option2">Medio</label>
+        <input type="radio" name="option" id="option3" value="G">
+        <label for="option3">Grande</label>        
+      </li>
+      <li>
+        <label for="resposta">Espaco para digitar a resposta</label>
+        <textarea name="resposta" id="resposta" ></textarea>
+      </li>
+      <li>
+        <label for="date">Data</label>
+        <input type="date" name="data" id="date">
+      </li>
+      <li>
+        <input type="checkbox" name="concordodancia" id="concordo1">
+        <label for="concordo1">condicao 1</label>
+        <input type="checkbox" name="concordodancia" id="concordo1">
+        <label for="concordo2">condicao 2</label>
+      </li>
+    </ul>
+    <button type="submit">Enviar</button>
+    <button type="reset">Apagar</button>
+  </form>
+</body>
+</html>
